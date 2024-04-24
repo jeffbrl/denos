@@ -21,11 +21,9 @@ apt-get install -y --no-install-recommends \
     systemd-sysv
 
 apt-get install -y --no-install-recommends \
-    network-manager net-tools wireless-tools wpagui \
     curl openssh-server openssh-client \
-    blackbox xserver-xorg-core xserver-xorg xinit xterm \
-    screenfetch screen lxterminal vim iputils-ping \
-    psmisc htop nmap wget git ca-certificates \
+    screen vim iputils-ping \
+    htop nmap wget git ca-certificates \
     nano fdisk && \
 apt-get clean
 

@@ -1,10 +1,12 @@
 # DenOS - Debian Linux build from scratch with Debootstrap#
 # Bernardino Lopez [ bernardino.lopez@gmail.com ]
 # 11.27.18
+# Modifed by Jeff Loughridge
 
-# 03_denos_chroot.sh - Customize your Distro
+# 03_denos_chroot_nfs.sh - Customize your Distro
+# Prepares system for NFSROOT
 # As root in chroot. Execute the script in a Terminal
-# ./03_denos_chroot.sh
+# ./03_denos_chroot_nfs.sh
 
 # export LIVE_BOOT=LIVE_BOOT64
 source ./denos_config.txt

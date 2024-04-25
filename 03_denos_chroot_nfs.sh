@@ -30,7 +30,7 @@ apt-get install -y --no-install-recommends \
     curl openssh-server openssh-client \
     iputils-ping \
     htop nmap wget git ca-certificates \
-    nano fdisk firmware-linux-free
+    nano fdisk firmware-linux-free sudo
 
 apt-get clean
 

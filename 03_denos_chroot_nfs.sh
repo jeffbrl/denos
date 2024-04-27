@@ -24,7 +24,8 @@ apt-get install -y --no-install-recommends \
     systemd-sysv \
     nfs-common \
     nfs-kernel-server \
-    iproute2
+    iproute2 \
+    locales
 
 apt-get install -y --no-install-recommends \
     curl openssh-server openssh-client \
@@ -41,9 +42,10 @@ echo -e "127.0.0.1\t$DISTRO_HOSTNAME" >> /etc/hosts
 echo "Set root password"
 passwd root
 
+useradd $NONROOTUSER -s /bin/bash -G sudo
 echo "Set $NONROOTUSER password"
 passwd $NONROOTUSER
-useradd $NONROOTUSER -s /bin/bash -G sudo
+
 
 cat << EOF > /etc/fstab
 proc    /proc   proc    defaults        0 0
